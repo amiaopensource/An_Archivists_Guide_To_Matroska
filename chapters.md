@@ -33,7 +33,7 @@ In the *Chapters* section set *Generating chapters:* to "Chapters in fixed inter
 
 Rename the *Destination file:* to "chapters\_test\_5sec.mkv"
 
-Press *Start multiplexing*
+Press *Start multiplexing*. This will create the new file Matroska files with a new chapter every five seconds. 
 
 
 
