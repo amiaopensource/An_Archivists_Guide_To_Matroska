@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PBCoreDescriptionDocument xsi:schemaLocation="http://www.pbcore.org/PBCore/PBCoreNamespace.html http://www.pbcore.org/PBCore/PBCoreXSD_Ver_1-2-1.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.pbcore.org/PBCore/PBCoreNamespace.html">
+	<!-- Generated at 2017-11-28T04:45:11Z by MediaInfoLib - v0.7.97 -->
+	<pbcoreIdentifier>
+		<identifier>chapter_test</identifier>
+		<identifierSource>Dave Rice's Crazy Awesome FFmpeg String</identifierSource>
+	</pbcoreIdentifier>
+	<pbcoreTitle>
+		<title>Chapter Sample File</title>
+	</pbcoreTitle>
+	<pbcoreDescription>
+		<description>A sample file used for explaining MKVToolNix chapter editing</description>
+		<descriptionType>Summary</descriptionType>
+	</pbcoreDescription>
+	<pbcoreInstantiation>
+		<pbcoreFormatID>
+			<formatIdentifier>chapters_test_custom</formatIdentifier>
+			<formatIdentifierSource version="PBCoreXSD_Ver_1.2_D1">File Name</formatIdentifierSource>
+		</pbcoreFormatID>
+		<formatDigital>video/x-matroska</formatDigital>
+		<formatLocation>/Users/morgan/Documents/AMIA/An_Archivists_Guide_To_Matroska/SampleVids/chapters_test_custom.mkv</formatLocation>
+		<dateCreated>Z</dateCreated>
+		<formatMediaType version="PBCoreXSD_Ver_1.2_D1">Video</formatMediaType>
+		<formatGenerations version="PBCoreXSD_Ver_1.2_D1" />
+		<formatFileSize>7837156</formatFileSize>
+		<formatTimeStart>00:00:00.000</formatTimeStart>
+		<formatDuration>00:00:25.999</formatDuration>
+		<formatDataRate>2411525 VBR</formatDataRate>
+		<formatTracks>3</formatTracks>
+		<pbcoreEssenceTrack>
+			<essenceTrackType>Video</essenceTrackType>
+			<essenceTrackIdentifier>1</essenceTrackIdentifier>
+			<essenceTrackIdentifierSource>ID (Mediainfo)</essenceTrackIdentifierSource>
+			<essenceTrackEncoding>FFV1 (V_MS/VFW/FOURCC / FFV1)</essenceTrackEncoding>
+			<essenceTrackDataRate>2134505</essenceTrackDataRate>
+			<essenceTrackFrameRate>25.000 CFR</essenceTrackFrameRate>
+			<essenceTrackBitDepth version="PBCoreXSD_Ver_1.2_D1">8</essenceTrackBitDepth>
+			<essenceTrackFrameSize>720x480</essenceTrackFrameSize>
+			<essenceTrackAspectRatio>1.500</essenceTrackAspectRatio>
+			<essenceTrackDuration>25000.000000</essenceTrackDuration>
+			<essenceTrackAnnotation>Count: 346|StreamCount: 1|StreamKind: Video|StreamKindID: 0|StreamOrder: 0|ID: 1|UniqueID: 1|Format: FFV1|Format_Commercial: FFV1|Format_Version: Version 0|CodecID: V_MS/VFW/FOURCC / FFV1|CodecID/Url: http://ffdshow-tryout.sourceforge.net/|Codec: FFV1|Codec/Url: http://ffdshow-tryout.sourceforge.net/|Codec/CC: FFV1|Duration: 25000.000000|BitRate: 2134505|Width: 720|Height: 480|PixelAspectRatio: 1.000|DisplayAspectRatio: 1.500|FrameRate_Mode: CFR|FrameRate: 25.000|FrameCount: 625|Resolution: 8|ColorSpace: YUV|ChromaSubsampling: 4:2:0|BitDepth: 8|Compression_Mode: Lossless|Bits-(Pixel*Frame): 0.247|Delay: 0|Delay_Source: Container|StreamSize: 6670330|StreamSize_Proportion: 0.85112|Encoded_Library: Lavc57.107.100 ffv1|Default: Yes|Forced: No|coder_type: Golomb Rice</essenceTrackAnnotation>
+		</pbcoreEssenceTrack>
+		<pbcoreEssenceTrack>
+			<essenceTrackType>Audio</essenceTrackType>
+			<essenceTrackIdentifier>2</essenceTrackIdentifier>
+			<essenceTrackIdentifierSource>ID (Mediainfo)</essenceTrackIdentifierSource>
+			<essenceTrackEncoding>FLAC (A_FLAC)</essenceTrackEncoding>
+			<essenceTrackDataRate>368831 VBR</essenceTrackDataRate>
+			<essenceTrackSamplingRate>48000</essenceTrackSamplingRate>
+			<essenceTrackBitDepth version="PBCoreXSD_Ver_1.2_D1">24</essenceTrackBitDepth>
+			<essenceTrackDuration>25000.000000</essenceTrackDuration>
+			<essenceTrackAnnotation>Count: 282|StreamCount: 1|StreamKind: Audio|StreamKindID: 0|StreamOrder: 1|ID: 2|UniqueID: 2|Format: FLAC|Format/Info: Free Lossless Audio Codec|Format/Url: http://flac.sourceforge.net/|Format_Commercial: FLAC|CodecID: A_FLAC|CodecID/Url: http://flac.sourceforge.net|Codec: FLAC|Codec/Family: Flac|Codec/Url: http://flac.sourceforge.net|Duration: 25000.000000|BitRate_Mode: VBR|BitRate: 368831|Channel(s): 2|ChannelPositions: Front: L R|SamplesPerFrame: 4598|SamplingRate: 48000|SamplingCount: 1200000|FrameRate: 10.440|FrameCount: 261|Resolution: 24|BitDepth: 24|Delay: 0|Delay_Source: Container|Video_Delay: 0|Video0_Delay: 0|StreamSize: 1152599|StreamSize_Proportion: 0.14707|Encoded_Library: Lavc57.107.100 flac|Default: Yes|Forced: No</essenceTrackAnnotation>
+		</pbcoreEssenceTrack>
+		<pbcoreEssenceTrack>
+			<essenceTrackType>Text</essenceTrackType>
+			<essenceTrackIdentifier>3</essenceTrackIdentifier>
+			<essenceTrackIdentifierSource>ID (Mediainfo)</essenceTrackIdentifierSource>
+			<essenceTrackEncoding>UTF-8 (S_TEXT/UTF8)</essenceTrackEncoding>
+			<essenceTrackDataRate>19</essenceTrackDataRate>
+			<essenceTrackDuration>25999.000000</essenceTrackDuration>
+			<essenceTrackAnnotation>Count: 243|StreamCount: 1|StreamKind: Text|StreamKindID: 0|StreamOrder: 2|ID: 3|UniqueID: 3|Format: UTF-8|Format_Commercial: UTF-8|CodecID: S_TEXT/UTF8|CodecID/Info: UTF-8 Plain Text|Codec: S_TEXT/UTF8|Codec/Info: UTF-8 Plain Text|Duration: 25999.000000|BitRate: 19|FrameRate: 0.192|FrameCount: 5|ElementCount: 5|StreamSize: 64|StreamSize_Proportion: 0.00001|Encoded_Library: Lavc57.107.100 srt|Default: No|Forced: No</essenceTrackAnnotation>
+		</pbcoreEssenceTrack>
+	</pbcoreInstantiation>
+</PBCoreDescriptionDocument>
+
