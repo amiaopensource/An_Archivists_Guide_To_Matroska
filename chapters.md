@@ -60,7 +60,7 @@ Open the XML file in a text editor and take a look!
 
 ### Editing Chapter Data
 
-In MKVToolNix, Navigate to the *Chapter editor* sidebar tab. Drop in **chapters_test_5sec.xml**. You should see the familier five chapters.
+In MKVToolNix, Navigate to the *Chapter editor* sidebar tab. Drop in **chapters_test_5sec.xml**. You should see the familiar five chapters.
 
 Clicking on any of the chapters will allow you edit information about the chapters.
 
