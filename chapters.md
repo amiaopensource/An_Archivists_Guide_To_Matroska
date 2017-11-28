@@ -44,7 +44,7 @@ Open **chapters\_test\_5sec.mkv** with VLC. Skip around the Chapters using *Play
 Export the chapter info to an XML file using mkvextract
 
 ```
-mkvextract chapters chapters\_test\_5sec.mkv > chapters\_test\_5sec.xml
+mkvextract chapters chapters_test_5sec.mkv > chapters_test_5sec.xml
 ```
 
 Go back to MKVToolNix, Navigate to the *Chapter editor* sidebar tab.  
