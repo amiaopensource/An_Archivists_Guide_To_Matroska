@@ -12,7 +12,9 @@ This file will be used throughout the Chapters exercise.
 
 ## MKXToolNix GUI
 
-### Creating Chapters
+### Creating Chapters in Fixed Intervals 
+
+This section will explain how to use the MKVToolNix GUI app to create, edit, and export chapter information. 
 
 Open MKVToolNix. Navigate to the *Multiplexer* sidebar tab. 
 
@@ -22,7 +24,7 @@ Drop in **chapters_test.mkv**. This will populate the *Input* tab at the top of 
 
 ![alt text](https://github.com/amiaopensource/An_Archivists_Guide_To_Matroska/blob/master/Screenshots/Chapters02.png "Input tab")
 
-In the *Source files:* section you should see only **chapters_test.srt**. If you see any
+In the *Source files:* section you should see only **chapters_test.mkv**. If you see any
 extra files remove them by right-clicking and selected *Remove File*. 
 
 In the *Tracks, chapters, and tags:* section you should see a Video track, an Audio track, a Subtitles track, and some tags. 
@@ -41,29 +43,32 @@ Open **chapters\_test\_5sec.mkv** with VLC. Skip around the Chapters using *Play
 
 ![alt text](https://github.com/amiaopensource/An_Archivists_Guide_To_Matroska/blob/master/Screenshots/Chapters04.png "Chapters in VLC")
 
-Export the chapter info to an XML file using mkvextract
+### Exporting Chapters to XML Data 
 
-```
-mkvextract chapters chapters_test_5sec.mkv > chapters_test_5sec.xml
-```
-
-Go back to MKVToolNix, Navigate to the *Chapter editor* sidebar tab.  Drop in **chapters_test_5sec.xml**. You should see five chapters 
-appear in the window on the left-hand side. Clicking on any of the chapters will allow you edit information about the chapters.
+Go back to MKVToolNix, Navigate to the *Chapter editor* sidebar tab. Drop in **chapters_test_5sec.mkv**. You should see five chapters 
+appear in the window on the left-hand side. 
 
 ![alt text](https://github.com/amiaopensource/An_Archivists_Guide_To_Matroska/blob/master/Screenshots/Chapters05.png "Chapters Editor 5sec")
 
-Edit the chapters in this window to make your own custom chapters for the file. 
-
-![alt text](https://github.com/amiaopensource/An_Archivists_Guide_To_Matroska/blob/master/Screenshots/Chapters06.png "Chapters Editor custom")
-
-Once you're finished, save the file by clicking (at the top of the screen) *Chapter editor -> Save as XML file*. Save the file as **chapter\_test\_custom.xml**
-
+Export this info to an XML file by clicking (at the top of the screen) *Chapter editor -> Save as XML file*. Save the file as **chapter\_test\_5sec.xml**
 
 ![alt text](https://github.com/amiaopensource/An_Archivists_Guide_To_Matroska/blob/master/Screenshots/Chapters07.png "Save as XML file")
 
 ![alt text](https://github.com/amiaopensource/An_Archivists_Guide_To_Matroska/blob/master/Screenshots/Chapters08.png "chapter_test_custom.xml")
 
-Return to the *Multiplexer* sidebar tab. 
+Open the XML file in a text editor and take a look!
+
+### Editing Chapter Data
+
+In MKVToolNix, Navigate to the *Chapter editor* sidebar tab. Drop in **chapters_test_5sec.xml**. You should see the familier five chapters.
+
+Clicking on any of the chapters will allow you edit information about the chapters.
+
+Edit the chapters in this window to make your own custom chapters for the file. 
+
+![alt text](https://github.com/amiaopensource/An_Archivists_Guide_To_Matroska/blob/master/Screenshots/Chapters06.png "Chapters Editor custom")
+
+Once you're finished, Return to the *Multiplexer* sidebar tab. 
 
 Drop in **chapters_test.mkv**
 
@@ -78,9 +83,48 @@ Press *Start multiplexing*. This will create the new file Matroska files with a 
 ![alt text](https://github.com/amiaopensource/An_Archivists_Guide_To_Matroska/blob/master/Screenshots/Chapters09.png "Multiplex new MKV with custom chapters")
 
 
- 
+### Embedding Attachments
 
+This section will explain how to use the MKVToolNix GUI app to embed attachments into the wrapper of an MKV file. This tool is very flexible, but there isn't 
+much in the way of guidelines as to how to use it in archival environments. In this example we'll be embedding a PBCore file in the MKV. This is not meant to be 
+an endorsement of the process, but an illustration of what's possible. 
 
+Start off by finding the samplePBCore.xml file, or making your own using mediainfo
+
+```
+mediainfo -f --Output=PBCore chapters_test_5sec.mkv > sampePBCore.xml
+```
+
+Open MKVToolNix, Navigate to the *Multiplexer* sidebar tab. 
+
+Drop in **chapter\_test\_custom.mkv**, and navigate to the  *Attachments* tab.
+
+```
+mkvmerge -i chapters_test_pbcore.mkv
+```
+
+You'll get the following output. 
+
+```
+File 'chapters_test_pbcore.mkv': container: Matroska
+Track ID 0: video (0x46465631 "FFV1")
+Track ID 1: audio (FLAC)
+Track ID 2: subtitles (SubRip/SRT)
+Attachment ID 1: type 'text/xml', size 5337 bytes, file name 'samplePBCore.xml'
+Chapters: 3 entries
+Global tags: 1 entry
+Tags for track ID 0: 1 entry
+Tags for track ID 1: 1 entry
+Tags for track ID 2: 1 entry
+```
+
+From here we can see that the ID for samplePBCore.xml is "1". We can now use mkvextract to extract the specific attachment using the following string
+
+```
+mkvextract attachments chapters_test_pbcore.mkv 1:samplePBCore_Extracted.xml
+```
+
+Open up both PBCore files and compare!
 
 
 
