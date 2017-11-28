@@ -37,9 +37,9 @@ Rename the *Destination file:* to "chapters\_test\_5sec.mkv"
 
 Press *Start multiplexing*. This will create the new file Matroska files with a new chapter every five seconds. 
 
-Open *chapters\_test\_5sec.mkv* with VLC. Skip around the Chapters using **Playback -> Chapter**
+Open **chapters\_test\_5sec.mkv** with VLC. Skip around the Chapters using *Playback -> Chapter*
 
-![alt text](https://github.com/amiaopensource/An_Archivists_Guide_To_Matroska/blob/master/Screenshots/Chapters03.png "Chapters in VLC")
+![alt text](https://github.com/amiaopensource/An_Archivists_Guide_To_Matroska/blob/master/Screenshots/Chapters04.png "Chapters in VLC")
 
 
 
