@@ -22,22 +22,22 @@ Open MKVToolNix. Navigate to the *Multiplexer* sidebar tab.
 
 Drop in **chapters_test.mkv**. This will populate the *Input* tab at the top of screen. 
 
-![alt text](https://github.com/amiaopensource/An_Archivists_Guide_To_Matroska/blob/master/Screenshots/Chapters02.png "Input tab")
-
 In the *Source files:* section you should see only **chapters_test.mkv**. If you see any
 extra files remove them by right-clicking and selected *Remove File*. 
 
 In the *Tracks, chapters, and tags:* section you should see a Video track, an Audio track, a Subtitles track, and some tags. 
 
-Click on the *Output* tab at the top of screen.
+![alt text](https://github.com/amiaopensource/An_Archivists_Guide_To_Matroska/blob/master/Screenshots/Chapters02.png "Input tab")
 
-![alt text](https://github.com/amiaopensource/An_Archivists_Guide_To_Matroska/blob/master/Screenshots/Chapters03.png "Output tab")
+Click on the *Output* tab at the top of screen.
 
 In the *Chapters* section set *Generating chapters:* to "Chapters in fixed intervals" and *Interval:* to "5s". 
 
 Rename the *Destination file:* to "chapters\_test\_5sec.mkv"
 
 Press *Start multiplexing*. This will create the new file Matroska files with a new chapter every five seconds. 
+
+![alt text](https://github.com/amiaopensource/An_Archivists_Guide_To_Matroska/blob/master/Screenshots/Chapters03.png "Output tab")
 
 Open **chapters\_test\_5sec.mkv** with VLC. Skip around the Chapters using *Playback -> Chapter*
 
