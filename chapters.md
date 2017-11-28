@@ -47,7 +47,47 @@ Export the chapter info to an XML file using mkvextract
 mkvextract chapters chapters_test_5sec.mkv > chapters_test_5sec.xml
 ```
 
-Go back to MKVToolNix, Navigate to the *Chapter editor* sidebar tab.  
+Go back to MKVToolNix, Navigate to the *Chapter editor* sidebar tab.  Drop in **chapters_test_5sec.xml**. You should see five chapters 
+appear in the window on the left-hand side. Clicking on any of the chapters will allow you edit information about the chapters.
+
+![alt text](https://github.com/amiaopensource/An_Archivists_Guide_To_Matroska/blob/master/Screenshots/Chapters05.png "Chapters Editor 5sec")
+
+Edit the chapters in this window to make your own custom chapters for the file. 
+
+![alt text](https://github.com/amiaopensource/An_Archivists_Guide_To_Matroska/blob/master/Screenshots/Chapters06.png "Chapters Editor custom")
+
+Once you're finished, save the file by clicking (at the top of the screen) *Chapter editor -> Save as XML file*. Save the file as **chapter\_test\_custom.xml**
+
+
+![alt text](https://github.com/amiaopensource/An_Archivists_Guide_To_Matroska/blob/master/Screenshots/Chapters07.png "Save as XML file")
+
+![alt text](https://github.com/amiaopensource/An_Archivists_Guide_To_Matroska/blob/master/Screenshots/Chapters08.png "chapter_test_custom.xml")
+
+Return to the *Multiplexer* sidebar tab. 
+
+Drop in **chapters_test.mkv**
+
+Navigate to the **Output** tab. 
+
+Click the folder icon next to *Chapter file:* and select  **chapter\_test\_custom.xml**. 
+
+Rename the *Destination file:* to "chapters\_test\_custom.mkv"
+
+Press *Start multiplexing*. This will create the new file Matroska files with a new chapter with your custom chapter markings. Test it out in VLC!
+
+![alt text](https://github.com/amiaopensource/An_Archivists_Guide_To_Matroska/blob/master/Screenshots/Chapters09.png "Multiplex new MKV with custom chapters")
+
+
+ 
+
+
+
+
+
+
+
+
+
 
 
 
