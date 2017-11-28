@@ -136,7 +136,7 @@ We're looking to find out what the *Attachment ID* of the PBcore file is.
 
 Looking at the output, we can see that the ID for samplePBCore.xml is *1*. 
 
-We can now use mkvextract to extract the specific attachment using the following string
+We can now use mkvextract to extract the specific attachment using the following command
 
 ```
 mkvextract attachments chapters_test_pbcore.mkv 1:samplePBCore_Extracted.xml
