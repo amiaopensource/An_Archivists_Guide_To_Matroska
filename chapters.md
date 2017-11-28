@@ -41,6 +41,14 @@ Open **chapters\_test\_5sec.mkv** with VLC. Skip around the Chapters using *Play
 
 ![alt text](https://github.com/amiaopensource/An_Archivists_Guide_To_Matroska/blob/master/Screenshots/Chapters04.png "Chapters in VLC")
 
+Export the chapter info to an XML file using mkvextract
+
+```
+mkvextract chapters chapters\_test\_5sec.mkv > chapters\_test\_5sec.xml
+```
+
+Go back to MKVToolNix, Navigate to the *Chapter editor* sidebar tab.  
+
 
 
 
