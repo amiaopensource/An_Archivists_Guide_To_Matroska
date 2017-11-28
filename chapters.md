@@ -99,11 +99,25 @@ Open MKVToolNix, Navigate to the *Multiplexer* sidebar tab.
 
 Drop in **chapter\_test\_custom.mkv**, and navigate to the  *Attachments* tab.
 
+In this tab, drop in the samplePBCore.xml file. You should see it the *Attachment to add:* window. 
+
+![alt text](https://github.com/amiaopensource/An_Archivists_Guide_To_Matroska/blob/master/Screenshots/Chapters09.png "Adding attachments")
+
+Rename the *Destination file:* to "chapters\_test\_pbore.mkv" and press *Start multiplexing*.
+
+Drop **chapters_test_pbcore.mkv** into MKVToolNix, and you should see the PBCore file in *Attachment from source file:*
+
+### Exporting Attachments
+
+The MKVToolNix GUI is not capable of exporting attachments, so you'll have to do it with some CLI apps. 
+
+First, we need to find out the ID of the attachment is. In order to do this type the following command:
+
 ```
 mkvmerge -i chapters_test_pbcore.mkv
 ```
 
-You'll get the following output. 
+You'll get the following output.
 
 ```
 File 'chapters_test_pbcore.mkv': container: Matroska
@@ -118,7 +132,11 @@ Tags for track ID 1: 1 entry
 Tags for track ID 2: 1 entry
 ```
 
-From here we can see that the ID for samplePBCore.xml is "1". We can now use mkvextract to extract the specific attachment using the following string
+We're looking to find out what the *Attachment ID* of the PBcore file is. 
+
+Looking at the output, we can see that the ID for samplePBCore.xml is *1*. 
+
+We can now use mkvextract to extract the specific attachment using the following string
 
 ```
 mkvextract attachments chapters_test_pbcore.mkv 1:samplePBCore_Extracted.xml
