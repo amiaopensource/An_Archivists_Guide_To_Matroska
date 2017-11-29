@@ -155,9 +155,9 @@ mkvpropedit chapters_test.mkv --edit track:v1 --set display-width=4 --set displa
 ```
 
 
-update title
+### Update Metadata
 
-language tags
+For this example, we're going to use **hamburger.mkv**. 
 
 ### Exporting Attachments
 
