@@ -46,7 +46,7 @@ Open **hamburger.xml** in your text editor. You should see a number of tags in t
 </Tag>
 ```  
 
-For this exercise we're going to do two things: 
+For this exercise we're going to do two things:
 
 (1): Update the description
 
@@ -58,7 +58,7 @@ Change the `<String>` tag to a new description. Be as creative as you like!
 
 ### Add nested data
 
-Update the PRODUCER tag to look like this. In this example, we're adding the tag TWITTER HANDLE and associating it with the PRODUCER tag. 
+Update the PRODUCER tag to look like this. In this example, we're adding the tag TWITTER HANDLE and associating it with the PRODUCER tag.
 ```
 <Tag>
     <Simple>
@@ -66,7 +66,7 @@ Update the PRODUCER tag to look like this. In this example, we're adding the tag
         <String>Rudy C. Granados</String>
         <Simple>
             <Name>TWITTER HANDLE</Name>
-            <String>@therealrudy</String>
+            <String>@rudist_rudy</String>
         </Simple>
     </Simple>
     <Targets />
@@ -81,7 +81,7 @@ To write the metadata from `hamburger.xml` into `hamburger.mkv` then use mkvprop
 mkvpropedit hamburger.mkv --tags global:hamburger.xml
 ```
 
-Run `ffprobe` on the file to see the results. 
+Run `ffprobe` on the file to see the results.
 
 ```
 ffprobe -i hamburger.mkv
@@ -105,9 +105,9 @@ mkvpropedit [input_file.mkv] --edit track:[target_track] --set [target_element]=
 To use this template, you'll need to replace everything in square brakets with your own values:
 
 `[input_file.mkv]` = the path to the files you wish edit
-`[target_track] ` = the track you wish to edit. This could be a video track, audio track, subtitle track, etc. 
+`[target_track] ` = the track you wish to edit. This could be a video track, audio track, subtitle track, etc.
 `[target_element]` = the element you wish to edit
-`[new_value]` = the new value for the element that you're updating. 
+`[new_value]` = the new value for the element that you're updating.
 
 The syntax for `[target_track] ` is "v1" for "first video track". "a1" for "first audio track, "a2" for second audio track, etc...
 
@@ -121,7 +121,7 @@ The following command will change the aspect ratio of a the chapters_test.mkv to
 mkvpropedit chapters_test.mkv --edit track:v1 --set display-width=16 --set display-height=9 --set display-unit=3
 ```
 
-After running the command, open chapters_test.mkv. You should be able to immediately see the video display as 16:9 now. 
+After running the command, open chapters_test.mkv. You should be able to immediately see the video display as 16:9 now.
 
 You can also run mediainfo on the file, and see that it reports as 16:9
 
