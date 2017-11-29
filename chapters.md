@@ -159,6 +159,30 @@ mkvpropedit chapters_test.mkv --edit track:v1 --set display-width=4 --set displa
 
 For this example, we're going to use **hamburger.mkv**. 
 
+First, export the tag metadata using `mkvextract` with one of the following to commands (different syntax to do the same thing)
+
+```
+mkvextract hamburger.mkv tags hamburger.xml
+```
+
+or
+
+```
+mkvextract tags hamburger.mkv > hamburger.xml
+```
+
+Open **hamburger.xml** in your text editor. You should see a number of tags in the file, each nested with a `<tag>` element, looking something like this:
+
+```
+<Tag>
+    <Simple>
+        <Name>PRODUCER</Name>
+        <String>Rudy C. Granados</String>
+    </Simple>
+    <Targets />
+</Tag>
+```  
+
 ### Exporting Attachments
 
 The MKVToolNix GUI is not capable of exporting attachments, so you'll have to do it with some CLI apps. 
