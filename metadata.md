@@ -71,10 +71,15 @@ Update the PRODUCER tag to look like this. In this example, we're adding the tag
     </Simple>
     <Targets />
 </Tag>
+
 ```  
-## Adding tags to an existing file with mkvpropedit
+### Adding tags to an existing file with mkvpropedit
 
 To write the metadata from `hamburger.xml` into `hamburger.mkv` then use mkvpropedit like this:
+
+```
+mkvpropedit hamburger.mkv --tags global:hamburger.xml
+```
 
 Run `ffprobe` on the file to see the results. 
 
@@ -85,19 +90,8 @@ ffprobe -i hamburger.mkv
 If you look at the metadata portion of the output you should see the following information
 
 ```
-    PRODUCER        : Rudy C. Granados
-    PRODUCER/TWITTER HANDLE: @therealrudy
+    PRODUCER                : Rudy C. Granados
+    PRODUCER/TWITTER HANDLE : @therealrudy
 ```
-
-
-```
-mkvpropedit hamburger.mkv --tags global:hamburger.xml
-```
-
-## Activity
-
-- Export Metadata from some_metadata.mkv to an xml file.
-- Edit that xml file to add additional metadata
-- Add the metadata from the xml file back into some_metadata.mkv
 
 See Matroska's [tagging example pages](https://matroska.org/technical/specs/tagging/example-video.html) for ideas.
