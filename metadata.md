@@ -14,7 +14,7 @@ Example:
 ffmpeg -f lavfi -i testsrc -t 1 -metadata ARCHIVAL=yes -metadata PRESERVE_THIS=okay -metadata DESCRIPTION="Just color bars" some_metadata.mkv
 ```
 
-Look at the tags for these files with mkvinfo, mkvinfo, and ffprobe.
+Look at the tags for these files with mkvinfo, mediainfo, and ffprobe.
 
 ```
 mkvinfo some_metadata.mkv
@@ -28,7 +28,7 @@ You can also add metadata specifically to certain tracks. This says that the fir
 ffmpeg -f lavfi -i testsrc -t 1 -metadata:s:v:0 language=eng more_metadata.mkv
 ```
 
-Look at the tags for these files with mkvinfo, mkvinfo, and ffprobe.
+Look at the tags for these files with mkvinfo, mediainfo, and ffprobe.
 
 ```
 mkvinfo more_metadata.mkv
