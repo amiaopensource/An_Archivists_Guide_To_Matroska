@@ -19,7 +19,7 @@ Look at the tags for these files with mkvinfo, mediainfo, and ffprobe.
 ```
 mkvinfo some_metadata.mkv
 mediainfo some_metadata.mkv
-ffprobe -i some_metadata.mkv
+ffprobe some_metadata.mkv
 ```
 
 You can also add metadata specifically to certain tracks. This says that the first video track (counting starts at zero) has a language code of 'eng'.
@@ -33,9 +33,8 @@ Look at the tags for these files with mkvinfo, mediainfo, and ffprobe.
 ```
 mkvinfo more_metadata.mkv
 mediainfo more_metadata.mkv
-ffprobe -i more_metadata.mkv
+ffprobe more_metadata.mkv
 ```
-
 
 ## Extracting tags from an existing file with mkvextract
 
@@ -101,7 +100,7 @@ mkvpropedit hamburger.mkv --tags global:hamburger.xml
 Run `ffprobe` on the file to see the results. 
 
 ```
-ffprobe -i hamburger.mkv
+ffprobe hamburger.mkv
 ```
 
 If you look at the metadata portion of the output you should see the following information
