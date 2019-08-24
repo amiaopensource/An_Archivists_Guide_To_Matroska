@@ -17,7 +17,7 @@ ffmpeg -f lavfi -i "smptebars=s=720x480:r=25:d=5" -f lavfi -i "aevalsrc=0.1*sin(
 
 This file will be used throughout the Chapters exercise.
 
-## MKXToolNix GUI
+## MKVToolNix GUI
 
 ### Creating Chapters in Fixed Intervals 
 
@@ -118,7 +118,7 @@ Drop **chapters_test_pbcore.mkv** into MKVToolNix, and you should see the PBCore
 
 There isn't a way  to export attachments using the MKVToolNix GUI, so we'll do this in the CLI Portion!
 
-## MKXToolNix CLI
+## MKVToolNix CLI
 
 
 ### Exporting Attachments
