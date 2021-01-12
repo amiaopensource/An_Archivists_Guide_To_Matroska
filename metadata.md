@@ -152,4 +152,4 @@ mkvpropedit chapters_test.mkv --edit track:v1 --set display-width=4 --set displa
 
 ```
 
-See Matroska's [tagging example pages](https://matroska.org/technical/specs/tagging/example-video.html) for ideas.
+See Matroska's [tagging example pages](https://matroska.org/technical/tagging-video-example.html) for ideas.
